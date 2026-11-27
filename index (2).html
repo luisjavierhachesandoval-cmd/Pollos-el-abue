@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17130f">
+<meta name="description" content="Pollos al Carbón El Abue. Tradición, sabor y especialidades de la casa.">
+<title>Pollos al Carbón El Abue</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #17130f;
+  color: #f5ead8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #21180f;
+  border-bottom: 2px solid #a9682c;
+}
+
+.logo {
+  color: #e6a34e;
+  font-family: 'Playfair Display', serif;
+  font-size: 29px;
+}
+
+header p {
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-top: 7px;
+  color: #d2b99a;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding: 15px 10px;
+  background: #120f0c;
+}
+
+nav a {
+  color: #e8d5bd;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+nav a:hover { color: #e6a34e; }
+
+.hero {
+  min-height: 520px;
+  padding: 65px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(#17130fbb, #17130fee),
+    url("fachada.jpg") center/cover no-repeat;
+}
+
+.tag {
+  color: #e6a34e;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 43px;
+  line-height: 1.12;
+  margin: 22px 0;
+}
+
+.hero h1 span { color: #e6a34e; }
+
+.hero p {
+  color: #e1d1bd;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  margin: 25px auto 0;
+  padding: 15px 25px;
+  background: #a85d25;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #d58a3d;
+  transform: translateY(-2px);
+}
+
+section {
+  padding: 55px 22px;
+  text-align: center;
+}
+
+.section-tag {
+  color: #d58a3d;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin: 14px 0;
+}
+
+.description {
+  color: #c7b6a0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.menu { background: #21180f; }
+
+.menu-grid {
+  max-width: 850px;
+  margin: 20px auto 0;
+}
+
+.menu-card {
+  background: #2b2118;
+  border: 1px solid #57402b;
+  padding: 23px;
+  margin-top: 15px;
+  border-radius: 7px;
+  text-align: left;
+}
+
+.menu-card h3 {
+  color: #e6a34e;
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.menu-card p {
+  color: #c7b6a0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.special {
+  color: #e6a34e;
+  border: 1px solid #a9682c;
+  padding: 22px;
+  margin: 25px auto 0;
+  border-radius: 7px;
+  max-width: 500px;
+}
+
+.whatsapp {
+  background: #21180f;
+}
+
+.whatsapp .btn {
+  background: #237b49;
+}
+
+.whatsapp .btn:hover {
+  background: #2e9b5d;
+}
+
+.visit {
+  background: #17130f;
+}
+
+footer {
+  padding: 35px 20px;
+  text-align: center;
+  background: #0e0c09;
+  color: #bba68c;
+  font-size: 11px;
+  line-height: 2;
+}
+
+footer h2 {
+  color: #e6a34e;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+}
+
+@media (min-width: 700px) {
+  .hero h1 { font-size: 65px; }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .menu-card { margin-top: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">EL ABUE</div>
+  <p>POLLOS AL CARBÓN</p>
+</header>
+
+<nav>
+  <a href="#inicio">INICIO</a>
+  <a href="#menu">MENÚ</a>
+  <a href="#whatsapp">WHATSAPP</a>
+  <a href="#visitanos">UBICACIÓN</a>
+</nav>
+
+<div class="hero" id="inicio">
+  <div class="tag">TRADICIÓN Y SABOR</div>
+  <h1>El auténtico<br><span>sabor del carbón</span></h1>
+  <p>
+    El sabor que reúne a la familia.<br>
+    Tradición, sazón y calidad en cada visita.
+  </p>
+  <a class="btn" href="https://maps.app.goo.gl/8eVNyeYzDxQvQUVn7" target="_blank">
+    VER UBICACIÓN
+  </a>
+</div>
+
+<section class="menu" id="menu">
+  <div class="section-tag">NUESTRO SABOR</div>
+  <h2>Especialidades de la casa</h2>
+  <p class="description">Conoce nuestras especialidades.</p>
+
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <h3>Pollo en barbacoa</h3>
+      <p>Una de nuestras especialidades de la casa.</p>
+    </div>
+
+    <div class="menu-card">
+      <h3>Pollo en cacahuate</h3>
+      <p>Una opción llena de sabor.</p>
+    </div>
+
+    <div class="menu-card">
+      <h3>Pollo en chiltepín</h3>
+      <p>Para quienes disfrutan un toque de picante.</p>
+    </div>
+
+    <div class="menu-card">
+      <h3>Pollo con mayonesa</h3>
+      <p>Otra de nuestras opciones del menú.</p>
+    </div>
+
+    <div class="menu-card">
+      <h3>Espagueti rojo y verde</h3>
+      <p>El acompañamiento para tu comida.</p>
+    </div>
+
+  </div>
+
+  <div class="special">
+    <h3>🔥 Especial de fin de semana</h3>
+    <p>Costilla disponible sábados y domingos.</p>
+  </div>
+</section>
+
+<section class="whatsapp" id="whatsapp">
+  <div class="section-tag">MANTENTE AL TANTO</div>
+  <h2>¡Síguenos en WhatsApp!</h2>
+  <p class="description">
+    Entérate de nuestras novedades y especialidades.
+  </p>
+
+  <a class="btn"
+     href="https://whatsapp.com/channel/0029VbEF6qV1noz9FLtZKi2W"
+     target="_blank" rel="noopener">
+    SEGUIR CANAL DE WHATSAPP
+  </a>
+</section>
+
+<section class="visit" id="visitanos">
+  <div class="section-tag">VISÍTANOS</div>
+  <h2>Te esperamos</h2>
+  <p class="description">
+    Horario: 8:00 AM – 6:30 PM
+  </p>
+
+  <a class="btn"
+     href="https://maps.app.goo.gl/8eVNyeYzDxQvQUVn7"
+     target="_blank" rel="noopener">
+    CÓMO LLEGAR
+  </a>
+</section>
+
+<footer>
+  <h2>EL ABUE</h2>
+  POLLOS AL CARBÓN<br>
+  El sabor de la tradición.
+</footer>
+
+</body>
+</html>
